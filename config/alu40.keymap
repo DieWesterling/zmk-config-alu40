@@ -23,6 +23,14 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
         };
+        CLF11: CLF11 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLF11";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <500>;
+        };
     };
 
     keymap {
@@ -49,7 +57,7 @@
             bindings = <
 &to 0   &kp HOME            &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_UP    &kp LEFT_BRACKET      &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET      &kp EQUAL
 &trans  &kp END             &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LEFT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &kp RETURN
-&none   &mt LEFT_SHIFT F16  &kp F17          &kp F18         &kp F19          &kp F20        &kp F21               &kp N1  &kp N2  &kp N3  &trans                 &none
+&none   &mt LEFT_SHIFT F16  &kp F17          &kp F18         &kp F19          &kp F20        &kp INTERNATIONAL_3   &kp N1  &kp N2  &kp N3  &trans                 &none
 &trans  &trans              &trans           &none           &kp SPACE        &trans         &trans                &kp N0  &none   &trans  &trans                 &trans
             >;
 
@@ -60,7 +68,7 @@
             bindings = <
 &to 3   &kp F1              &kp F2   &kp F3   &kp F4   &kp F5   &kp LEFT_BRACKET      &kp PLUS           &kp EXCLAMATION  &kp LA(EXCLAMATION)  &kp RIGHT_BRACKET         &kp GRAVE
 &trans  &kp F6              &kp F7   &kp F8   &kp F9   &kp F10  &kp LEFT_PARENTHESIS  &kp MINUS          &kp QUESTION     &kp LA(QUESTION)     &kp RIGHT_PARENTHESIS     &kp RETURN
-&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH        &trans                    &none
+&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH        &kp CAPSLOCK              &none
 &trans  &trans              &trans   &none    &trans   &trans   &trans                &kp BACKSPACE      &kp DELETE       &trans               &mt RIGHT_ALT C_PREVIOUS  &mt RIGHT_CONTROL C_NEXT
             >;
 
