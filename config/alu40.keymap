@@ -68,7 +68,7 @@
             bindings = <
 &to 3   &kp F1              &kp F2   &kp F3   &kp F4   &kp F5   &kp LEFT_BRACKET      &kp PLUS           &kp EXCLAMATION  &kp LA(EXCLAMATION)  &kp RIGHT_BRACKET         &kp GRAVE
 &trans  &kp F6              &kp F7   &kp F8   &kp F9   &kp F10  &kp LEFT_PARENTHESIS  &kp MINUS          &kp QUESTION     &kp LA(QUESTION)     &kp RIGHT_PARENTHESIS     &kp RETURN
-&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH        &kp CAPSLOCK              &none
+&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH        &mt RIGHT_SHIFT CAPSLOCK  &none
 &trans  &trans              &trans   &none    &trans   &trans   &trans                &kp BACKSPACE      &kp DELETE       &trans               &mt RIGHT_ALT C_PREVIOUS  &mt RIGHT_CONTROL C_NEXT
             >;
 
