@@ -17,12 +17,14 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
         };
+
         TT2: TT2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TT2";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
         };
+
         CLF11: CLF11 {
             compatible = "zmk,behavior-tap-dance";
             label = "CLF11";
@@ -66,10 +68,10 @@
 
         raise {
             bindings = <
-&to 3   &kp F1              &kp F2   &kp F3   &kp F4   &kp F5   &kp LEFT_BRACKET      &kp PLUS           &kp EXCLAMATION  &kp LA(EXCLAMATION)  &kp RIGHT_BRACKET         &kp GRAVE
-&trans  &kp F6              &kp F7   &kp F8   &kp F9   &kp F10  &kp LEFT_PARENTHESIS  &kp MINUS          &kp QUESTION     &kp LA(QUESTION)     &kp RIGHT_PARENTHESIS     &kp RETURN
-&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH        &kp RIGHT_SHIFT           &none
-&trans  &trans              &trans   &none    &trans   &trans   &trans                &kp LEFT_ARROW     &kp RIGHT_ARROW  &trans               &mt RIGHT_ALT C_PREVIOUS  &mt RIGHT_CONTROL C_NEXT
+&to 3   &kp F1              &kp F2   &kp F3   &kp F4   &kp F5   &kp LEFT_BRACKET      &kp PLUS           &kp EXCLAMATION  &kp LA(N1)        &kp RIGHT_BRACKET         &kp GRAVE
+&trans  &kp F6              &kp F7   &kp F8   &kp F9   &kp F10  &kp LEFT_PARENTHESIS  &kp MINUS          &kp QUESTION     &kp LA(QUESTION)  &kp RIGHT_PARENTHESIS     &kp RETURN
+&none   &mt LEFT_SHIFT F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(MINUS)         &kp LS(LA(MINUS))  &kp SLASH        &kp BACKSLASH     &kp RIGHT_SHIFT           &none
+&trans  &trans              &trans   &none    &trans   &trans   &trans                &kp LEFT_ARROW     &kp RIGHT_ARROW  &trans            &mt RIGHT_ALT C_PREVIOUS  &mt RIGHT_CONTROL C_NEXT
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DEC C_BRI_INC>;
@@ -77,10 +79,10 @@
 
         control {
             bindings = <
-&to 0  &none            &none            &none            &sys_reset  &none        &none  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none  &none
-&none  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none       &none        &none  &bt BT_SEL 4     &bt BT_PRV       &bt BT_NXT       &none  &none
-&none  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none       &bootloader  &none  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &none  &none
-&none  &none            &none            &none            &none       &none        &none  &bt BT_SEL 0     &bt BT_CLR       &none            &none  &none
+&to 0  &kp N1          &kp N2           &kp N3           &kp N4           &kp N5           &kp N6  &kp N7        &kp N8        &kp N9        &kp N0           &none
+&none  &none           &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none   &bt BT_SEL 4  &sys_reset    &bootloader   &none            &none
+&none  &kp LEFT_SHIFT  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none            &none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp RIGHT_SHIFT  &none
+&none  &none           &none            &none            &none            &none            &none   &bt BT_SEL 0  &bt BT_CLR    &none         &none            &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(PLUS)>;
